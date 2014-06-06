@@ -1,0 +1,217 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE pov SYSTEM "/usr/share/cgc-replay/replay.dtd">
+<pov>
+<cbid>service</cbid>
+<replay>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c8\x7c11\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Leasing of Motor Vehicles\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Leasing of Motor Vehicles\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Leasing of Motor Vehicles\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Leasing of Motor Vehicles\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c8\x7c11\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c9\x7c3\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get First Article Testing and Approval\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>First Article Testing and Approval\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c9\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c9\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put jAQ g5hMv9gyQx2\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put WJAOT9 ET4Z8MWBFDKYBlE\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get WJAOT9\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>WJAOT9\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c14\x7c5\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Two\x2dStep Sealed Bidding\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Two-Step Sealed Bidding\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c14\x7c5\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c14\x7c5\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Two\x2dStep Sealed Bidding\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Two-Step Sealed Bidding\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c14\x7c5\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Two\x2dStep Sealed Bidding\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Two-Step Sealed Bidding\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c14\x7c5\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c14\x7c5\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search mFtXcUUVW\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Two\x2dStep Sealed Bidding\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Two-Step Sealed Bidding\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Two\x2dStep Sealed Bidding\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Two-Step Sealed Bidding\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Two\x2dStep Sealed Bidding\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Two-Step Sealed Bidding\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c14\x7c5\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put J7BvEoP IW0yAjEnOEg\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c14\x7c5\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c14\x7c5\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c17\x7c6\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Management and Operating Contracts\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Management and Operating Contracts\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c17\x7c6\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c17\x7c6\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c17\x7c6\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c17\x7c6\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Management and Operating Contracts\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Management and Operating Contracts\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c3\x7c9\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c3\x7c9\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c3\x7c9\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Whistleblower Protections for Contracto\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Whistleblower Protections for Contracto\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Whistleblower Protections for Contracto\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Whistleblower Protections for Contracto\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Whistleblower Protections for Contracto\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Whistleblower Protections for Contracto\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Whistleblower Protections for Contracto\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Whistleblower Protections for Contracto\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Whistleblower Protections for Contracto\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Whistleblower Protections for Contracto\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c3\x7c9\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c3\x7c9\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c22\x7c8\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Equal Employment Opportunity\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Equal Employment Opportunity\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Equal Employment Opportunity\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Equal Employment Opportunity\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put n4EtpoOpE Mnp5W8ISqi\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress n4EtpoOpE\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>n4EtpoOpE\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put Xq5YpVQDq AiRbgFOGocIBV5Jtu\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c3\x7c6\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c3\x7c6\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search OziMfrkUu\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c16\x7c3\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c16\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Cost\x2dReimbursement Contracts\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Cost-Reimbursement Contracts\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c16\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Cost\x2dReimbursement Contracts\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Cost-Reimbursement Contracts\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Cost\x2dReimbursement Contracts\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Cost-Reimbursement Contracts\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x2b\x2b\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c16\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x2b\x2b\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress ofb0W1XWmCM7jWZ19ru\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>command failed: compress\x0a</data></match></read>
+</replay>
+</pov>

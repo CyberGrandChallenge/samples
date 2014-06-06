@@ -1,0 +1,300 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE pov SYSTEM "/usr/share/cgc-replay/replay.dtd">
+<pov>
+<cbid>service</cbid>
+<replay>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c\x0a</data></match></read>
+    <read><delim>\x0a</delim><match><data>\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c5\x7c4\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Release of Information\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Release of Information\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c5\x7c4\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c5\x7c4\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Release of Information\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Release of Information\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c5\x7c4\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x2b\x2b\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c14\x7c4\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c3\x7c7\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c3\x7c7\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put eDxtQJw ojYU1qRhclhXay\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c3\x7c7\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c17\x7c7\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Interagency Acquisitions: Acquisitions\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Interagency Acquisitions: Acquisitions\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Interagency Acquisitions: Acquisitions\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Interagency Acquisitions: Acquisitions\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Interagency Acquisitions: Acquisitions\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Interagency Acquisitions: Acquisitions\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Interagency Acquisitions: Acquisitions\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Interagency Acquisitions: Acquisitions\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put mAcD RoukmYpNusVMH1\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search RM9lDBtXMWA0YrC4RvXlGQc\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c17\x7c7\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c17\x7c7\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c17\x7c7\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c17\x7c7\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put u5nYR G7nV7IAWEDlPx8R0BXZ\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c17\x7c7\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c1\x7c2\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Administration\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Administration\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put wSisKxZ ZiN2NOgaeer8C\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get wSisKxZ\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>wSisKxZ\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c1\x7c2\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c1\x7c2\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c1\x7c2\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get wSisKxZ\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>wSisKxZ\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put o29RitMK 0QnHJmg9X5zqhfLkucV\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get wSisKxZ\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>wSisKxZ\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get o29RitMK\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>o29RitMK\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Administration\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Administration\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c1\x7c2\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c19\x7c3\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c19\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c19\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put dXk8e 0SePqGVx23M5yTIn9vI9\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c\x0a</data></match></read>
+    <read><delim>\x0a</delim><match><data>\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put NPufe 89j6MtNzQKX\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>make\x5fsec n5UebU2Y7T\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress NPufe\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>NPufe\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put 0f6KNKW PVxPSqbskVa8SVzEO\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c\x0a</data></match></read>
+    <read><delim>\x0a</delim><match><data>\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c\x0a</data></match></read>
+    <read><delim>\x0a</delim><match><data>\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get NPufe\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>NPufe\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put vkR xu9drD2h6P6aboR\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get NPufe\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>NPufe\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put JarND WcM8KVLKWv9GqJ\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put maoida 75Yw6eC5Iav\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c3\x7c6\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c3\x7c6\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c3\x7c6\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c15\x7c3\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c15\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Source Selection\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Source Selection\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Source Selection\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Source Selection\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c15\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Source Selection\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Source Selection\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c15\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c15\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c15\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Source Selection\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Source Selection\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search qITG6tjxCaLXtWlIeCfb4pnYy\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put 4W0Owmya pLji6oBof9k\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c15\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c15\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Source Selection\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Source Selection\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c15\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c15\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c15\x7c3\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c22\x7c3\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Contract Work Hours and Safety Standard\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Contract Work Hours and Safety Standard\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search aoHxB37fIIz5A7iVZIu3ZuHi\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c3\x7c2\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c3\x7c2\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Contractor Gratuities to Government Per\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Contractor Gratuities to Government Per\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Contractor Gratuities to Government Per\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Contractor Gratuities to Government Per\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Contractor Gratuities to Government Per\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Contractor Gratuities to Government Per\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Contractor Gratuities to Government Per\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Contractor Gratuities to Government Per\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>quit\x0a</data></write>
+</replay>
+</pov>

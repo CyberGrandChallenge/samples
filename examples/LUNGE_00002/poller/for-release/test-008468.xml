@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE pov SYSTEM "/usr/share/cgc-replay/replay.dtd">
+<pov>
+<cbid>service</cbid>
+<replay>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c7\x7c4\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Equipment Lease or Purchase\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Equipment Lease or Purchase\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Equipment Lease or Purchase\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Equipment Lease or Purchase\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c9\x7c3\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c17\x7c6\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Management and Operating Contracts\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Management and Operating Contracts\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Management and Operating Contracts\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Management and Operating Contracts\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>list\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>current section: \x7c17\x7c6\x7c\x0a</data></match></read>
+    <read><delim>\x0a\x0a</delim></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress Management and Operating Contracts\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Management and Operating Contracts\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x7c19\x7c13\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get Historically Underutilized Business Zon\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>Historically Underutilized Business Zon\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put WLuwk2l wBwXvzOEXroK9qL1Nz\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put eLJON1Qb NsYAgN9T8UEUzH\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>cur\x5fsec\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>\x7c19\x7c13\x7c\x0a</data></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>put Hp8lwd0 FPICSzj0QM7\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>search \x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress eLJON1Qb\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>eLJON1Qb\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress WLuwk2l\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>WLuwk2l\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>get eLJON1Qb\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>eLJON1Qb\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress WLuwk2l\x0a</data></write>
+    <read><delim>\x0a\x0a</delim><match><pcre>WLuwk2l\n.*\n\n</pcre></match></read>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>ch\x5fsec \x2b\x2b\x7c\x0a</data></write>
+    <read><delim>\x3e </delim><match><data>\x3e </data></match></read>
+    <write><data>compress WZPPUyQhC\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>command failed: compress\x0a</data></match></read>
+</replay>
+</pov>

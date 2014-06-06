@@ -1,0 +1,31 @@
+digraph G {
+    input [label="input"];
+    get [label="get"];
+    put [label="put"];
+    start [label="start", shape=box];
+    make_sec [label="make_sec"];
+    cur_sec [label="cur_sec"];
+    search [label="search"];
+    compress [label="compress"];
+    list [label="list"];
+    quit [label="quit", shape=triangle];
+    ch_sec [label="ch_sec"];
+    input -> get;
+    input -> put;
+    input -> make_sec [label="0.1x"];
+    input -> cur_sec;
+    input -> search;
+    input -> compress;
+    input -> list;
+    input -> quit [label="0.1x"];
+    input -> ch_sec;
+    get -> input;
+    put -> input;
+    start -> input;
+    make_sec -> input;
+    cur_sec -> input;
+    search -> input;
+    compress -> input;
+    list -> input;
+    ch_sec -> input;
+}

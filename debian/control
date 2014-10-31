@@ -1,0 +1,15 @@
+Source: cgc-sample-challenges
+Section: net
+Priority: standard
+Maintainer: Brian Caswell <bmc@lungetech.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://www.darpa.mil/cybergrandchallenge
+
+Package: cgc-sample-challenges
+Architecture: any
+Depends: cb-testing, cgcef-verify, libcgc, poll-generator, ${python:Depends}
+Description: CGC Sample Challenges
+ cgc-sample-challenges is a collection of sample challenges for DARPA's Cyber
+ Grand Challenge.  These challenges are only representative examples of the
+ organizational structure used to create challenge binaries.

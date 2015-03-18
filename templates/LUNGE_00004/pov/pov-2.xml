@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE pov SYSTEM "/usr/share/cgc-docs/replay.dtd">
+<pov>
+    <cbid>service</cbid>
+    <replay>
+        <read echo="yes"><delim>\n</delim></read>
+        <read echo="yes"><delim>\n</delim></read>
+        <write><data>AB\n</data></write>
+        <read echo="yes"><delim>\n</delim><match><data>AB\n</data></match></read>
+    </replay>
+</pov>

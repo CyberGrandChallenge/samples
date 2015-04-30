@@ -1,0 +1,30 @@
+---
+nodes:
+- name: start
+- name: menu
+- name: upload
+- name: download
+- name: archive
+- name: list
+- name: search
+- name: remove
+- name: quit
+- name: invalid
+
+edges:
+- start: menu
+- menu: upload
+- menu: download
+- menu: archive
+- menu: list
+- menu: search
+- menu: remove
+- menu: quit
+- menu: invalid
+- upload: menu
+- download: menu
+- archive: menu
+- list: menu
+- search: menu
+- remove: menu
+- invalid: menu

@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE pov SYSTEM "/usr/share/cgc-docs/replay.dtd">
+<pov>
+<cbid>service</cbid>
+<replay>
+    <read><delim>\x0a</delim><match><data>220 mx.darpa.mil Mail service ready\x0a</data></match></read>
+    <write><data>HEOL\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>250 mx.darpa.mil at your service\x0a</data></match></read>
+    <write><data>AUTH LOGIN\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>334 VXNlcm5hbWU6\x0a</data></match></read>
+    <write><data>Y2djQGRhcnBhLm1pbA\x3d\x3d\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>334 UGFzc3dvcmQ6\x0a</data></match></read>
+    <write><data>Y2djIWRhcnBhMDgwNDE5OTc\x3d\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>235 Accepted\x0a</data></match></read>
+    <write><data>POST FROM:\x3ccgc\x40darpa.mil\x3e\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>250 Ok\x0a</data></match></read>
+    <write><data>SEND TO:\x3ccybergrandchallenge\x40darpa.mil\x3e\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>250 Ok\x0a</data></match></read>
+    <write><data>DATA\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>354 Start mail input\x3b end with \x3cLF\x3e.\x3cLF\x3e\x0a</data></match></read>
+    <write><data>\x7es\x7es\x7es\x7es\x7es\x7es\x7es\x7es\x7es\x0a</data></write>
+    <write><data>\x7es\x7es\x7es\x7es\x7es\x7es\x7es\x7es\x7es\x0a</data></write>
+    <write><data>\x7es\x7es\x7es\x7es\x7es\x7es\x7es\x7es\x7es\x0a</data></write>
+    <write><data>.\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>250 Ok\x0a</data></match></read>
+    <write><data>VRFY\x0a</data></write>
+    <read><delim>250 Ok\x0a</delim></read>
+    <write><data>POST FROM:\x3ccgc\x40darpa.mil\x3e\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>250 Ok\x0a</data></match></read>
+    <write><data>SEND TO:\x3ciwo\x40darpa.mil\x3e\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>250 Ok\x0a</data></match></read>
+    <write><data>DATA\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>354 Start mail input\x3b end with \x3cLF\x3e.\x3cLF\x3e\x0a</data></match></read>
+    <write><data>tITXLI2uzyHm\x0a116Yn4\x0c\x0aw44r\x0aCsFnqpjNJt\x0bnUCPbhy EGL2dQoRyfXjfX8CE\x0a</data></write>
+    <write><data>xr Zp5a9A5mF\x0dU\x0a</data></write>
+    <write><data>Oo\x0be4Kehyhn4g3e24McwuFluyEEXuLYcpIgcrwX5Zd5sO97p\x0a</data></write>
+    <write><data>t5RltGLSjyD6o\x092 aBHSJuFeH\x0cP\x09ZVVSoaYdFaf0Ugnb\x0a</data></write>
+    <write><data>JGKIdZKw\x0dB0LI4\x0ahYsA7M\x0d\x0a</data></write>
+    <write><data>Rfc\x0bFOvp02r6y\x0dF9I\x0aLuWJ\x0cwXRlo8mhxtdakYwXSVMYAUbRx \x0bCvkbBaV\x0cCj0\x0a</data></write>
+    <write><data>EO HZrC\x0d eASgrG1e\x0dEDQyePgxSVUZYAaU7\x0cDLc\x0bbeeRL\x0aH7j42mUFEorxzlJb\x0a</data></write>
+    <write><data>PvNa886kf1YKNRTDqWp3lVA3v\x0di5DwSx\x0cKTgzP\x0ahF2lGXXJ\x09fRpzw1r\x0a</data></write>
+    <write><data>.\x0a</data></write>
+    <read><delim>\x0a</delim><match><data>250 Ok\x0a</data></match></read>
+    <write><data>QUIT\x0a</data></write>
+    <read><delim>221 mx.darpa.mil Closing transmission channel\x0a</delim></read>
+</replay>
+</pov>

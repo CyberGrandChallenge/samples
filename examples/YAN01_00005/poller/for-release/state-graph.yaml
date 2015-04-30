@@ -1,0 +1,16 @@
+---
+nodes:
+- name: start
+- name: write_echo
+- name: end
+
+edges:
+
+- start: write_echo
+
+- write_echo: start
+  weight: .99
+
+- write_echo: end
+  weight: .01
+

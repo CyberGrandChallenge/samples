@@ -1,0 +1,10 @@
+---
+nodes:
+- name: start
+- name: go
+  continue: .9
+- name: finish
+
+edges:
+- start: go
+- go: go

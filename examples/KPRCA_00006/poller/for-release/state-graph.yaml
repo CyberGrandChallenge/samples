@@ -1,0 +1,47 @@
+---
+nodes:
+- name: start
+- name: pre_auth
+- name: helo
+- name: ehlo
+- name: noop
+- name: help
+- name: auth
+- name: authenticated
+- name: mail
+- name: rcpt
+- name: rset
+- name: data
+- name: vrfy
+- name: quit
+
+edges:
+- start: pre_auth
+- pre_auth: helo
+- pre_auth: ehlo
+- pre_auth: help
+  weight: .2
+- pre_auth: noop
+  weight: .1
+- help: pre_auth
+- noop: pre_auth
+- helo: auth
+- ehlo: auth
+- auth: authenticated
+- authenticated: mail
+- authenticated: vrfy
+- mail: rcpt
+- mail: rset
+  weight: .1
+- rset: authenticated
+- rcpt: rcpt
+  weight: .4
+- rcpt: rset
+  weight: .2
+- rcpt: data
+- data: vrfy
+  weight: .5
+- vrfy: authenticated
+- data: quit
+  weight: .7
+- data: authenticated

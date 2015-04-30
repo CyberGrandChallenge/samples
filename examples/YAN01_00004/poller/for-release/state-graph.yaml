@@ -1,0 +1,33 @@
+---
+nodes:
+- name: start
+- name: input
+- name: badcmd
+- name: lookup
+- name: addword
+- name: removeword
+- name: end
+
+edges:
+
+- start: input
+
+- input: badcmd
+  weight: .1
+
+- input: lookup
+  weight: .65
+
+- input: end
+  weight: .05
+
+- input: addword
+  weight: .1
+
+- input: removeword
+  weight: .1
+
+- badcmd: input
+- lookup: input
+- addword: input
+- removeword: input

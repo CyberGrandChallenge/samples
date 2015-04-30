@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE pov SYSTEM "/usr/share/cgc-docs/replay.dtd">
+<pov>
+    <cbid>echo</cbid>
+    <replay>
+        <write>
+          <data>A hello world\n</data>
+        </write>
+        <read>
+          <delim>\n</delim><match><data>SUCCESS\n</data></match>
+        </read>
+        <write>
+          <data>A bye world\n</data>
+        </write>
+        <read>
+          <delim>\n</delim><match><data>SUCCESS\n</data></match>
+        </read>
+        <write>
+          <data>R hello\n</data>
+        </write>
+        <read>
+          <delim>\n</delim><match><data>SUCCESS\n</data></match>
+        </read>
+        <write>
+          <data>L bye\n</data>
+        </write>
+        <read>
+          <delim>\n</delim><match><data>bye : world\n</data></match>
+        </read>
+        <write>
+          <data>L hello\n</data>
+        </write>
+        <read><length>1</length></read>
+    </replay>
+</pov>

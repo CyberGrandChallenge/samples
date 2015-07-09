@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE pov SYSTEM "/usr/share/cgc-docs/replay.dtd">
+<pov>
+    <cbid>charstats</cbid>
+    <replay>
+        <read><delim>\x0a</delim><match><data>Welcome to the Diophantine Equation Finding Game\n</data></match></read>
+
+        <read><delim>\x0a</delim><match><data>Please enter your name\n</data></match></read>
+        <write><data>TEST\n</data></write>
+
+        <read><delim>\x0a</delim><match><data>Please choose a difficulty level (Power) from 3-10\n</data></match></read>
+        <write><data>\x04\x00\x00\x00</data></write>
+
+        <read><delim>\x0a</delim><match><data>What is the solution?\n</data></match></read>
+        <write><data>\xef\x99\xea\xc1</data></write>
+
+        <read><delim>\x0a</delim><match><data>How many terms (integers) are in your solution?\n</data></match></read>
+        <write><data>\x03\x00\x00\x00</data></write>
+
+        <read><delim>\x0a</delim><match><data>Enter your numbers\n</data></match></read>
+
+        <write><data>\xd7\x7f\xa2\x4e</data></write>
+        <write><data>\x2a\xd2\x76\x64</data></write>
+        <write><data>\x06\x44\x52\x8e</data></write>
+
+        <read><delim>\x0a</delim><match><data>What is the solution?\n</data></match></read>
+        <write><data>\xef\x99\xea\xc1</data></write>
+
+        <read><delim>\x0a</delim><match><data>How many terms (integers) are in your solution?\n</data></match></read>
+        <write><data>\x03\x00\x00\x00</data></write>
+
+        <read><delim>\x0a</delim><match><data>Enter your numbers\n</data></match></read>
+
+        <write><data>\xd7\x7f\xa2\x4e</data></write>
+        <write><data>\x2a\xd2\x76\x64</data></write>
+        <write><data>\x06\x44\x52\x8e</data></write>
+
+        <read><delim>\x0a</delim><match><data>What is the solution?\n</data></match></read>
+        <write><data>\x00\x00\x00\x00</data></write>
+
+        <read><delim>\x0a</delim><match><data>How many terms (integers) are in your solution?\n</data></match></read>
+        <write><data>\x00\x00\x00\x00</data></write>
+
+        <read><delim>\x0a</delim><match><data>Thanks for playing. Here are the final scores\n</data></match></read>
+        <read><delim>\x0a</delim><match><data>TEST\t0000000024\t4.1.3\n</data></match></read>
+        <read><delim>\x0a</delim><match><data>Player 0\t0000000010\t10\n</data></match></read>
+        <read><delim>\x0a</delim><match><data>Player 1\t0000000009\t9\n</data></match></read>
+        <read><delim>\x0a</delim><match><data>Player 2\t0000000008\t8\n</data></match></read>
+        <read><delim>\x0a</delim><match><data>Player 3\t0000000007\t7\n</data></match></read>
+        <read><delim>\x0a</delim><match><data>Player 4\t0000000006\t6\n</data></match></read>
+        <read><delim>\x0a</delim><match><data>Player 5\t0000000005\t5\n</data></match></read>
+        <read><delim>\x0a</delim><match><data>Player 6\t0000000004\t4\n</data></match></read>
+        <read><delim>\x0a</delim><match><data>Player 7\t0000000003\t3\n</data></match></read>
+        <read><delim>\x0a</delim><match><data>Player 8\t0000000002\t2\n</data></match></read>
+    </replay>
+</pov>

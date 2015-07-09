@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE pov SYSTEM "/usr/share/cgc-docs/replay.dtd">
+<pov>
+    <cbid>charstats</cbid>
+    <replay>
+        <read><delim>\x0a</delim><match><data>Welcome to the Diophantine Equation Finding Game\n</data></match></read>
+
+        <read><delim>\x0a</delim><match><data>Please enter your name\n</data></match></read>
+        <write><data>POV\n</data></write>
+
+        <read><delim>\x0a</delim><match><data>Please choose a difficulty level (Power) from 3-10\n</data></match></read>
+        <write><data>\x04\x00\x00\x00</data></write>
+
+        <read><delim>\x0a</delim><match><data>What is the solution?\n</data></match></read>
+        <write><data>\x12\xfa\xfd\xce</data></write>
+
+        <read><delim>\x0a</delim><match><data>How many terms (integers) are in your solution?\n</data></match></read>
+        <write><data>\x02\x00\x00\x00</data></write>
+
+        <read><delim>\x0a</delim><match><data>Enter your numbers\n</data></match></read>
+
+        <write><data>\xe6\xb7\xe8\x05</data></write>
+        <write><data>\x64\x1d\xd4\x80</data></write>
+
+	<read><delim>\x0a</delim><match><data>Fermat says you can't find integers a, b, c such that a^n + b^n = c^n for n > 2\n</data></match></read>
+	<read><delim>\x0a</delim><match><data>You were able to find three ints.\n</data></match></read>
+
+	<read><delim>\x0a</delim><match><data>What is your name?\n</data></match></read>    
+        <write><data>POV\n</data></write>
+
+	<read><delim>\x0a</delim><match><data>Something we should know about you?\n</data></match></read>    
+        <write><data>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n</data></write>
+        <read echo="yes"><delim>\x0a</delim></read>
+    </replay>
+</pov>

@@ -1,0 +1,62 @@
+---
+nodes:
+- name: start
+- name: menu
+- name: prop_setup
+- name: display_prop_info
+- name: Setup_Path1
+- name: Setup_Path2
+- name: Setup_Path3
+- name: Setup_Path4
+- name: Setup_Path5
+- name: Setup_Path6
+- name: return_to_main_menu
+- name: display_indirect
+- name: display_laborrates
+- name: enter_one_resource
+- name: fill_resources
+- name: display_resource_data
+- name: price_proposal
+- name: exit
+
+edges:
+- start: menu
+- menu: prop_setup
+  weight: .7
+- menu: display_indirect
+  weight: .1
+- display_indirect: menu
+- menu: display_laborrates
+  weight: .1
+- display_laborrates: menu
+- menu: enter_one_resource
+  weight: .9
+- enter_one_resource: menu
+- menu: fill_resources
+  weight: .1
+- fill_resources: menu
+- menu: display_resource_data
+- display_resource_data: menu
+- menu: price_proposal
+  weight: .2
+- price_proposal: menu
+- menu: exit
+
+
+- prop_setup: display_prop_info
+  weight: .3
+- prop_setup: Setup_Path1
+- prop_setup: Setup_Path2
+- prop_setup: Setup_Path3
+- prop_setup: Setup_Path4
+- prop_setup: Setup_Path5
+- prop_setup: Setup_Path6
+- Setup_Path1: display_prop_info
+- Setup_Path2: display_prop_info
+- Setup_Path3: display_prop_info
+- Setup_Path4: display_prop_info
+- Setup_Path5: display_prop_info
+- Setup_Path6: display_prop_info
+- display_prop_info: return_to_main_menu
+#- prop_setup: return_to_main_menu
+- return_to_main_menu: menu

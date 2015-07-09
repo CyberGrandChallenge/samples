@@ -1,0 +1,22 @@
+---
+nodes:
+- name: start
+- name: player_name
+- name: difficulty_level
+- name: solution
+- name: num_terms
+- name: num_terms_end
+- name: terms
+- name: end
+
+edges:
+- start: player_name
+- player_name: difficulty_level
+- difficulty_level: solution
+- solution: num_terms
+  weight: 1
+- solution: num_terms_end
+  weight: .1
+- num_terms: terms
+- num_terms_end: end
+- terms: solution

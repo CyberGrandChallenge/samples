@@ -1,0 +1,89 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE pov SYSTEM "/usr/share/cgc-docs/replay.dtd">
+<pov>
+    <cbid>service</cbid>
+    <replay>
+        <delay>10</delay>
+        
+        <decl> 
+            <var>it_is_hello</var>
+            <value> 
+                <data>Hello</data>
+            </value>
+        </decl>
+
+        <decl> 
+            <var>my_name</var>
+            <value> 
+                <data format="hex">68 656c6c6f2074686572</data>
+                <data format="hex">65</data>
+            </value>
+        </decl>
+        
+        <read echo="yes">
+            <delim>echo</delim>
+            <match><data format="asciic">This implements a simple echo</data></match>
+            <assign>
+                <var>foo</var>
+                <slice begin="1" end="10" />
+            </assign>
+        </read>
+
+        <read echo="yes">
+            <delim>\n</delim>
+            <match><data format="asciic"> service\n</data></match>
+            <assign>
+                <var>bar</var>
+                <pcre>(.*)</pcre>
+            </assign>
+        </read>
+
+        <write echo="yes">
+            <var>my_name</var>
+            <data>\n</data>
+        </write>
+
+        <read echo='yes'>
+            <delim>\n</delim>
+            <match><data>hello there\n</data></match>
+        </read>
+
+        <write echo="yes">
+            <data>H\x65llo</data>
+            <data format='hex'>20</data>
+            <data>mom\n</data>
+        </write>
+
+        <read echo="yes">
+            <delim>\n</delim>
+            <match>
+                <var>it_is_hello</var>
+                <data> mom\n</data>
+            </match>
+        </read>
+        
+        <write echo="yes">
+            <data>Hello</data>
+            <data> dad\n</data>
+        </write>
+        
+        <read echo="yes">
+            <length>10</length>
+            <match>
+                <data>Hello </data>
+                <pcre>\w+</pcre>
+                <data>\n</data>
+            </match>
+        </read>
+
+        <write echo='yes'>
+            <data>Hello sister</data>
+        </write>
+        
+        <read echo="yes">
+            <length>10</length>
+            <match invert="true"><data>Hello dad\n</data></match>
+        </read>
+
+    </replay>
+</pov>

@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE pov SYSTEM "/usr/share/cgc-docs/replay.dtd">
+<pov>
+    <cbid>service</cbid>
+    <replay>
+        <delay>25</delay>
+
+        <read echo="yes">
+            <delim>\n</delim>
+            <match><data format="asciic">This implements a simple echo service\n</data></match>
+        </read>
+
+        <delay>10</delay>
+
+        <write>
+            <data>Hello mom\n</data>
+        </write>
+
+        <delay>10</delay>
+
+        <read echo="yes">
+            <delim>\n</delim>
+            <match><data format="asciic">Hello mom\n</data></match>
+        </read>
+        
+        <delay>10</delay>
+
+        <write>
+            <data>Hello dad\n</data>
+        </write>
+        
+        <delay>10</delay>
+
+        <read echo="yes">
+            <delim>\n</delim>
+            <match><data format="asciic">Hello dad\n</data></match>
+        </read>
+    </replay>
+</pov>

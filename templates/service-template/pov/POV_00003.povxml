@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE cfepov SYSTEM "/usr/share/cgc-docs/cfe-pov.dtd">
+<cfepov>
+<cbid>service</cbid>
+<replay>
+    <negotiate>
+        <type1>
+            <ipmask>0xFEFEFEFE</ipmask>
+            <regmask>0xFEFEFEFE</regmask>
+            <regnum>2</regnum>
+        </type1>
+    </negotiate>
+    <read echo="yes"><delim>\n</delim></read>
+    <read echo="yes"><delim>\n</delim></read>
+    <write echo="yes">
+        <data>ABC</data>
+        <var>TYPE1_IP</var>
+        <var>TYPE1_REG</var>
+        <data>\n</data>
+    </write>
+    <!-- <read><length>1</length></read> -->
+</replay>
+</cfepov>

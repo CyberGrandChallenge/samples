@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE cfepov SYSTEM "/usr/share/cgc-docs/cfe-pov.dtd">
+<cfepov>
+<cbid>service</cbid>
+<replay>
+    <negotiate><type2 /></negotiate>
+    <read echo="yes"><delim>\n</delim></read>
+    <read echo="yes"><delim>\n</delim></read>
+    <write>
+       <data>ABD\n</data>
+    </write>
+    <read>
+       <length isvar="true">TYPE2_LENGTH</length>
+       <assign>
+          <var>TYPE2_VALUE</var>
+          <slice />
+       </assign>
+    </read>
+    <submit><var>TYPE2_VALUE</var></submit>
+</replay>
+</cfepov>
